@@ -25,10 +25,9 @@ public class Dog extends Animal {
     }
 
     public boolean equals(Dog bulldog){
-        boolean result = this.getName().equalsIgnoreCase(bulldog.getName()) &&
+        return this.getName().equalsIgnoreCase(bulldog.getName()) &&
                 (this.getAge() == bulldog.getAge() ||
                         this.breed.equals(bulldog.breed));
-        return result;
     }
 
 
