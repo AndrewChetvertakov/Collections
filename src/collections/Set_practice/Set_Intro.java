@@ -84,7 +84,7 @@ public class Set_Intro {
         Set<Integer> set2 = new TreeSet<>(Arrays.asList(10, 10, 10, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, -10, -20));
 //        set2.addAll(set);  <--- another way to add collection to current collection.
         System.out.println();
-
+        
 //        regular for each loop:
         for (Integer next : set2) {
             System.out.print(next + " ");

@@ -1,4 +1,4 @@
-package Repls.TjMax;
+package Replits.Repls.TjMax;
 
 public class Item {
 
