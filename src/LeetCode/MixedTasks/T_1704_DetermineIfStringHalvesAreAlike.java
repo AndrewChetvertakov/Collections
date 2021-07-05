@@ -18,7 +18,7 @@ public class T_1704_DetermineIfStringHalvesAreAlike {
             if (pew.contains(ch[i])){count++;}
             if (pew.contains(ch[j])){count--;}
         }
-
+        ;
     return count == 0;
     }
 }
