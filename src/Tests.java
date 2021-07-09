@@ -1,23 +1,15 @@
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Tests {
     public static void main(String[] args) {
-    String a = "abcdefghijklmnopqrstuvwxyz";
-    for(char c: a.toCharArray())
-        System.out.println("char " + c + " " + Character.getNumericValue(c));
+    int[] a = {3,2,1};
+    int[] b = a.clone();
+    Arrays.sort(b);
+        System.out.println(Arrays.toString(a));
+        System.out.println(Arrays.toString(b));
 
-
-//    char b = 'a';
-//        System.out.println("value = " + converter(a));
 
     }
-    public int converter(String word){
-        int i=0;
-        for(char c: word.toCharArray()){
-            i= i*10 + (Character.getNumericValue(c)-97);
-        }
-        return i;
-    }
-
-
 }
