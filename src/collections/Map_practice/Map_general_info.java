@@ -31,6 +31,40 @@ public class Map_general_info {
         SortedMap<String, String> sortedMap = new TreeMap<>();
 
 
+        Map<Character, Integer> tMap = new HashMap<>();
+tMap.put('a', 2);
+tMap.put('b', 3);
+tMap.put('c', 4);
+tMap.put('d', 5);
+tMap.put('e', 5);
+
+
+        Map<Character, Integer> sMap = new HashMap<>();
+        tMap.put('a', 2);
+        tMap.put('b', 3);
+        tMap.put('c', 4);
+        tMap.put('e', 1);
+
+        System.out.println("TEST: " + tMap.get('z'));
+
+        System.out.println("==========================");
+        System.out.println("==========================");
+        System.out.println("==========================");
+        System.out.println("==========================");
+
+
+//        for (Integer c: tMap.values()){
+//            System.out.println(c);
+//        }
+//        Iterator it = tMap.keySet().iterator();
+
+        for(int i='a'; i <= 'z'; i++){
+
+        if(sMap.get(i) != tMap.get(i)){
+            System.out.println("answer"+i);
+        }
+
+            }
 
 
 

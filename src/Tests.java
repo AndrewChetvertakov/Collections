@@ -16,6 +16,19 @@ public class Tests {
 xyBalance("aaxbb") → false
 xyBalance("yaaxbb") → false
          */
+        int[][] arr = new int[2][];
+        double[][] arr1 = new double[][]{{},{}};
+//        long[][] arr3 = new long[2][2]{ {1,2}, {3,4}};
+        int[][] arrasd = {{'a','b'},{'c','d'}};
+        int ivar = 100;
+        double dvar = 123;
+        float fvar = 200;
+//        ivar = fvar;  //4
+//        fvar = ivar;
+//        dvar = fvar;
+//        fvar = dvar; //7
+//        dvar = ivar;
+//        ivar = dvar; //9
 
     }
 

@@ -4,6 +4,13 @@ import java.util.List;
 
 public class Test2 {
     public static void main(String[] args) {
+        int a = 10;
+        int b = 5;
+        System.out.println((a = b) != 0);
+        System.out.println((a=b));
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+
 
         int [] nums ={3, 2, 1, 8, 9, -4,-6};
         // The pair whose sum is closest to zero :
@@ -23,5 +30,18 @@ public class Test2 {
             }
         }
         System.out.println(Arrays.toString(pew));
+        
     }
+
+/*
+01234
+level
+012is
+
+
+ */
+
+
+
+
 }
