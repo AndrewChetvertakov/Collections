@@ -15,10 +15,6 @@ public class Tests {
         List<String> gointToBarberer = new ArrayList<>(Arrays.asList(pew));
         System.out.println(newbiewBarberer(gointToBarberer));
 
-
-
-
-
 //        List<String> shavedList = gointToBarberer.stream().map(String::trim).collect(Collectors.toList() );
 //
 //        System.out.println(shavedList);
