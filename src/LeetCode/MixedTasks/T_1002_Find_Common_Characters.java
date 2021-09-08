@@ -5,22 +5,22 @@ import java.util.List;
 
 public class T_1002_Find_Common_Characters {
     public static void main(String[] args) {
-        String[] words = {"cool","lock","cook", "clock", "flock", "mock", "sock"}; // c  o
+        String[] words = {"Tatiana","Kibidas", "ads"}; // c  o
         System.out.println(commonChars(words));
 
 
     }
+        //TODO FIx this one, just copyt from leet
 
     public static List<String> commonChars(String[] words) {
 
         List<String> result = new ArrayList<>();
         int[][] letters = new int[words.length][26];
 
-        //iterate each word
         for (int word = 0; word < words.length; word++) {
-
-            //iterate each character in a word and count it in the matrix:
+            //iterate each word
             for (int letter = 0; letter < words[word].length(); letter++) {
+                //iterate each character in a word and count it in the matrix:
                 letters[word][words[word].charAt(letter) - 97]++;
             }
         }
