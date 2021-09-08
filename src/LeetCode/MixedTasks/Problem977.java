@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.MixedTasks;
 
 import java.util.Arrays;
 

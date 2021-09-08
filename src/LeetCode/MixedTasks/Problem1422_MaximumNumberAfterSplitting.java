@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.MixedTasks;
 
 public class Problem1422_MaximumNumberAfterSplitting {
     public static void main(String[] args) {

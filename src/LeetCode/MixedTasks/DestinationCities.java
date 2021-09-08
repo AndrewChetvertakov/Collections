@@ -1,4 +1,4 @@
-package LeetCode.pewpewpew;
+package LeetCode.MixedTasks;
 
 import java.util.*;
 import java.util.stream.Collectors;
