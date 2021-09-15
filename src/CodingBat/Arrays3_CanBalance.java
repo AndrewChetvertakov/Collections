@@ -9,6 +9,7 @@ public class Arrays3_CanBalance {
 
     }
 
+
     public static boolean canBalance(int[] nums) {
 
         if(nums.length<2) return false;

@@ -1,4 +1,4 @@
-package ToDoWithMyGroup;
+package ToDoWithMyBuddies;
 
 public class TwoSumTwo {
     public static void main(String[] args) {

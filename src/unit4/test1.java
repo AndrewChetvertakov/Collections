@@ -1,6 +1,4 @@
-package unit4_assesment;
-
-import java.util.Arrays;
+package unit4;
 
 public class test1 {
     public static void main(String[] args) {

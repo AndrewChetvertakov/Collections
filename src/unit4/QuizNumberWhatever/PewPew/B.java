@@ -1,6 +1,6 @@
-package unit4_assesment.QuizNumberWhatever.PewPew;
+package unit4.QuizNumberWhatever.PewPew;
 
-import unit4_assesment.QuizNumberWhatever.Pew.A;
+import unit4.QuizNumberWhatever.Pew.A;
 
 public class B extends A {
     public static void main(String[] args) {

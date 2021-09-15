@@ -1,6 +1,6 @@
-package unit4_assesment.QuizNumberWhatever;
+package unit4.QuizNumberWhatever;
 
-import unit4_assesment.QuizNumberWhatever.PewPew.BB;
+import unit4.QuizNumberWhatever.PewPew.BB;
 
 public class Test extends BB {
 

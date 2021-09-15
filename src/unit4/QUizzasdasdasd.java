@@ -1,8 +1,4 @@
-package unit4_assesment;
-
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
+package unit4;
 
 public class QUizzasdasdasd {
 
