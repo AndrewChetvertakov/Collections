@@ -18,4 +18,19 @@ public class ASHJASDHJKDAS {
         System.out.println();
         System.out.println(Arrays.toString(alphabet));
     }
+
+    public int maximum69Number (int num) {
+
+        String pew = String.valueOf(num);
+        StringBuilder b = new StringBuilder();
+        for(int i = 0; i < pew.length(); i++){
+
+            if( pew.charAt(i) == '6' ){
+                b.setCharAt(i,'9');
+                break;
+            }
+        }
+        return Integer.parseInt(b.toString());
+    }
+
 }
