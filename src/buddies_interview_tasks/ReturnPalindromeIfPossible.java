@@ -16,6 +16,7 @@ public class ReturnPalindromeIfPossible {
     }
 
     public static String checkPalindrome(String input){
+
         if(input==null || input.isEmpty()) return "NO";
         else if(input.equals("?")) return String.valueOf(randomizeCharacter());
         else if(input.length() == 1) return input;
