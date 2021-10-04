@@ -55,7 +55,9 @@ public class T_1684_CountTheNumberOfConsistentStrings {
     }
 
     public int countConsistentStringsFASTESTONE(String allowed, String[] words) {
+
         final boolean[] allowedAsciiCodes = new boolean[26];
+
         for (char character : allowed.toCharArray()) {
             allowedAsciiCodes[(int) character - 97] = true;
         }
