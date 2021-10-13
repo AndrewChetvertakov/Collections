@@ -1,3 +1,5 @@
+package random_garbage;
+
 import java.util.StringTokenizer;
 
 public class StringTokenizerWhaaat {

@@ -1,3 +1,5 @@
+package random_garbage;
+
 import javafx.scene.chart.Chart;
 
 import java.net.Inet4Address;

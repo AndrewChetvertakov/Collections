@@ -1,3 +1,5 @@
+package random_garbage;
+
 import java.util.Arrays;
 
 public class ASHJASDHJKDAS {
