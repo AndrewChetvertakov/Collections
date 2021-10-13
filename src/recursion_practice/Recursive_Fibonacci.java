@@ -9,7 +9,7 @@ public class Recursive_Fibonacci {
 
     public static int find_Fibonacci_recursively(int n){
         if (n == 0 || n == 1) return n;
-        else if (n <= 0) return -1;
+        else if (n < 0) return -1;
         else return find_Fibonacci_recursively(n-2) + find_Fibonacci_recursively(n-1);
     }
 }
