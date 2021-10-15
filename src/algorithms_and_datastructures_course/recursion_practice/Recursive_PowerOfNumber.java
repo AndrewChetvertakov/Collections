@@ -1,4 +1,4 @@
-package recursion_practice;
+package algorithms_and_datastructures_course.recursion_practice;
 
 public class Recursive_PowerOfNumber {
     public static void main(String[] args) {
