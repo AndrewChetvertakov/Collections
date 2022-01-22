@@ -20,7 +20,7 @@ public class TreeExperiments {
         strHead.right.right = new Node<>("f");
 
         //Depth first Traversal: a -> b -> d -> e -> c -> f
-//        strHead.dfs_iteratively(strHead);
+        strHead.dfs_iteratively(strHead);
         strHead.dfs_recursively(strHead);
     }
 
