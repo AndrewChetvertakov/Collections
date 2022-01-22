@@ -1,9 +1,5 @@
 package real_interview_coding_tasks.mix_of_everything;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 public class AlphabetGalore {
     public static void main(String[] args) {
         /*

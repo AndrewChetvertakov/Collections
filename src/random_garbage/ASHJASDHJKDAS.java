@@ -8,7 +8,7 @@ public class ASHJASDHJKDAS {
         int[] alphabet = new int[26];
         for(char c: anythign.toCharArray()){
     // a - 97 = index 0
-//     b - 92 = index 1
+//     b - 97 = index 1
 //            ....
 //     z - 97 = index 26
             alphabet[c-97]++;
