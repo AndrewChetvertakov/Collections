@@ -5,11 +5,21 @@ import BinaryTrees.tree_definition.Node;
 public class T_1379_Find_a_Corresponding_Node_of_a_Binary_Tree_in_a_Clone_of_That_Tree {
     public static void main(String[] args) {
 
-          Node<Integer> original = build_tree();
-          Node<Integer> copy = build_tree();
+          final Node<Integer> original = build_tree();
+          final Node<Integer> copy = build_tree();
           Node.dfs_recursively(copy);
+          System.out.println("result = " + getTargetCopy(original, copy, new Node<>(3)).value);
 
-
+    }
+    static Node<Integer> node = null;
+    public static Node<Integer> getTargetCopy(final Node<Integer> original, final Node<Integer> copy, final Node<Integer> target) {
+        if(original == null) return null;
+        if(original.value == target.value) node = copy;
+        else{
+            getTargetCopy(original.left, copy.left, target);
+            getTargetCopy(original.right, copy.right, target);
+        }
+        return node;
     }
 
     private static Node<Integer> build_tree(){
