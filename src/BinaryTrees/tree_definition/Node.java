@@ -3,7 +3,7 @@ package BinaryTrees.tree_definition;
 import java.util.Stack;
 
 public class Node<T> {
-    T value;
+    public T value;
     public Node<T> left, right;
 
     public Node(T value) {
@@ -12,7 +12,15 @@ public class Node<T> {
         right = null;
     }
 
-    public void dfs_iteratively(Node<T> head) {
+    public Node() {}
+
+    public Node(T head_value, T left_child_value, T right_child_value){
+        this.value = head_value;
+        this.left = new Node<>(left_child_value);
+        this.right = new Node<>(right_child_value);
+    }
+
+    public static<T> void dfs_iteratively(Node<T> head) {
         if (head == null) return;
         Stack<Node<T>> stack = new Stack<Node<T>>() {{ push(head); }};
         while (!stack.isEmpty()) {
@@ -23,7 +31,12 @@ public class Node<T> {
         }
     }
 
-    public void dfs_recursively(Node<T> head) {
+    public void add_leaves(T left, T right) {
+        this.left = new Node<>(left);
+        this.right = new Node<>(right);
+    }
+
+    public static<T> void dfs_recursively(Node<T> head) {
         if (head == null) return;
         System.out.println(head.value);
         dfs_recursively(head.left);
