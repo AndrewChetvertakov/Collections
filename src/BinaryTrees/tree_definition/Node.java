@@ -43,4 +43,10 @@ public class Node<T> {
         dfs_recursively(head.right);
     }
 
+    //TODO how to treat nulls from leetcode inputs for integers and such??...
+    public static<T> Node<T> convert_arr_to_Tree_bfs(T[] arr) {
+
+        return null;
+    }
+
 }
