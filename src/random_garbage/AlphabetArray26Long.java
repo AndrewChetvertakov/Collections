@@ -2,7 +2,7 @@ package random_garbage;
 
 import java.util.Arrays;
 
-public class ASHJASDHJKDAS {
+public class AlphabetArray26Long {
     public static void main(String[] args) {
         String anythign = "ashjdahskjdhakudfhajksdhajkshdajkhsdaszzzzzz";
         int[] alphabet = new int[26];

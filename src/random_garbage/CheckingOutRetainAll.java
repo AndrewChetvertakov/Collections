@@ -5,13 +5,13 @@ import java.util.List;
 
 public class CheckingOutRetainAll {
     public static void main(String[] args) {
-        List<String> listOne = new ArrayList(){{
+        List<String> listOne = new ArrayList<String>(){{
             add("one");
             add("three");
             add("five");
             add("seven");
         }};
-        List<String> listTwo = new ArrayList(){{
+        List<String> listTwo = new ArrayList<String>(){{
             add("one");
             add("two");
             add("three");

@@ -38,8 +38,7 @@ public class DoesWordConsistOfAllLetters {
                 Character key = entry.getKey();
                 Integer value = entry.getValue();
 
-                if(wordMap.containsKey(key) && wordMap.get(key) >= value) continue;
-                else return false;
+                if(!(wordMap.containsKey(key) && wordMap.get(key) >= value)) return false;
             }
 
         return true;
