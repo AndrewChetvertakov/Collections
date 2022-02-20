@@ -26,6 +26,7 @@ public class TwoDimentionalArrayReversal {
         for (int j = 0; j <image.length; j++) {
             System.out.println(Arrays.toString(image[j]));
         }
+
         System.out.println("-------------------------");
         for(int i=0;i<(image.length-1)/2;i++){
             int[] tempArr=new int[image[i].length];
@@ -37,8 +38,5 @@ public class TwoDimentionalArrayReversal {
         System.out.println(Arrays.toString(image[0]));
         System.out.println(Arrays.toString(image[1]));
         System.out.println(Arrays.toString(image[2]));
-
-
-
         }
 }
