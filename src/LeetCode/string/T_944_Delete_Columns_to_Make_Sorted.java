@@ -1,7 +1,5 @@
 package LeetCode.string;
 
-import java.util.Arrays;
-
 public class T_944_Delete_Columns_to_Make_Sorted {
     public static void main(String[] args) {
 

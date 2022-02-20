@@ -1,4 +1,4 @@
-package LeetCode;
+package to_be_done_later;
 
 public class TwoSumTwo {
     public static void main(String[] args) {

@@ -53,7 +53,7 @@ public class MergeSortAlg {
         while(right_iter < right_len) input[input_iter++] = right[right_iter++];
     }
 
-    private int[] randomize_array(int arr_length, int upperBound) {
+    public int[] randomize_array(int arr_length, int upperBound) {
         int[] numbers = new int[arr_length];
         Random random = new Random();
         for (int i = 0; i < numbers.length; i++) {

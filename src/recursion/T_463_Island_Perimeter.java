@@ -6,10 +6,12 @@ public class T_463_Island_Perimeter {
         T_463_Island_Perimeter obj = new T_463_Island_Perimeter();
 
         // expected 16;
-        int[][] grid = {{0, 1, 0, 0},
+        int[][] grid = {
+                {0, 1, 0, 0},
                 {1, 1, 1, 0},
                 {0, 1, 0, 0},
-                {1, 1, 0, 0}};
+                {1, 1, 0, 0}
+        };
 
         System.out.println(obj.islandPerimeter(grid));
     }

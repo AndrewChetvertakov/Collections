@@ -1,6 +1,5 @@
 package random_practice.playing_with_trees;
 
-import random_practice.random_garbage.unit4.QuizNumberWhatever.PewPew.B;
 
 public class BinarySearchTree {
     BinaryNode root;
