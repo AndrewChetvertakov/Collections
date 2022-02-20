@@ -1,6 +1,6 @@
 package recursion;
 
-import BinaryTrees.tree_definition.Node;
+import binary_trees.tree_definition.Node;
 
 import java.util.LinkedList;
 import java.util.Queue;

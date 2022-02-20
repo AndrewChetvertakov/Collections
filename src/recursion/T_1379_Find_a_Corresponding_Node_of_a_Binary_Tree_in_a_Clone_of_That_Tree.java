@@ -1,6 +1,6 @@
 package recursion;
 
-import BinaryTrees.tree_definition.Node;
+import binary_trees.tree_definition.Node;
 
 public class T_1379_Find_a_Corresponding_Node_of_a_Binary_Tree_in_a_Clone_of_That_Tree {
     public static void main(String[] args) {

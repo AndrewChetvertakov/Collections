@@ -1,8 +1,6 @@
 package recursion;
 
-import BinaryTrees.tree_definition.Node;
-
-import javax.swing.tree.TreeNode;
+import binary_trees.tree_definition.Node;
 
 public class T_1315_Sum_of_Nodes_with_Even_Valued_Grandparent {
     public static void main(String[] args) {

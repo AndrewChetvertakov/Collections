@@ -16,6 +16,7 @@ public class SortByFrequency {
 
     }
 
+    //terrible solution!
     public static String sortByFrequency(String str){
 
         List<Character> list = new ArrayList<>();

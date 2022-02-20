@@ -1,8 +1,6 @@
 package recursion;
 
-import BinaryTrees.tree_definition.Node;
-
-import java.util.List;
+import binary_trees.tree_definition.Node;
 
 public class T_1305_All_Elements_in_Two_Binary_Search_Trees {
     public static void main(String[] args) {
