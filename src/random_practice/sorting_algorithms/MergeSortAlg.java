@@ -1,24 +1,25 @@
 package random_practice.sorting_algorithms;
 
-import java.util.Random;
+import LeetCode.leet_code_helpers.LeetCodeUtils;
 
 public class MergeSortAlg {
     public static void main(String[] args) {
 
-        MergeSortAlg obj = new MergeSortAlg();
+        LeetCodeUtils obj = new LeetCodeUtils();
+        MergeSortAlg obj2 = new MergeSortAlg();
         int arrayLength = 1_000_000;
         int upperBoundary = Integer.MAX_VALUE;
-        int[] nums_1 = obj.randomize_array(arrayLength , upperBoundary);
+        int[] nums_1 = obj.generate_random_array(arrayLength , upperBoundary);
 //        System.out.println("nums_1 pre-sort = " + Arrays.toString(nums_1));
         long start = System.nanoTime();
-        obj.mergeSort(nums_1);
+        obj2.mergeSort(nums_1);
 //        System.out.println("nums_1 post-sort = " + Arrays.toString(nums_1));
         long end = System.nanoTime();
         System.out.println("Merge sort of " + arrayLength +" took = " + ((end-start) / 1_000_000_000) + "seconds");
 
-        int[] bubble = obj.randomize_array(arrayLength, upperBoundary);
+        int[] bubble = obj.generate_random_array(arrayLength, upperBoundary);
         start = System.nanoTime();
-        obj.bubbleSort(bubble);
+        obj2.bubbleSort(bubble);
         end = System.nanoTime();
         System.out.println("Bubble sort of " + arrayLength +" took = " + ((end-start) / 1_000_000_000) + "seconds");
 
@@ -53,15 +54,6 @@ public class MergeSortAlg {
         while(right_iter < right_len) input[input_iter++] = right[right_iter++];
     }
 
-    public int[] randomize_array(int arr_length, int upperBound) {
-        int[] numbers = new int[arr_length];
-        Random random = new Random();
-        for (int i = 0; i < numbers.length; i++) {
-            numbers[i] = random.nextInt(upperBound);
-        }
-        return numbers;
-    }
-
     private void bubbleSort(int[] input) {
         for(int i = 0; i < input.length; i++) {
             for (int j = i+1; j < input.length; j++) {
@@ -73,5 +65,4 @@ public class MergeSortAlg {
             }
         }
     }
-
 }

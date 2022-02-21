@@ -8,19 +8,12 @@ public class Sorting {
     public static String sortSentence(String s) {
         String[] arr = s.split(" ");
         String[] result = new String[arr.length];
-        String finalResult;
-        for( int i = 0; i < arr.length; i++){
-            int index = Integer.parseInt(arr[i].substring(arr[i].length()-1));
-
-            result[index-1] = arr[i].substring(0 ,arr[i].length()-1);
-
-
+        for (String value : arr) {
+            int index = Integer.parseInt(value.substring(value.length() - 1));
+            result[index - 1] = value.substring(0, value.length() - 1);
         }
         StringBuilder builder = new StringBuilder();
-        for (int i = 0; i < result.length; i++){
-
-            builder.append(result[i]).append(" ");
-        }
+        for (String value : result) builder.append(value).append(" ");
         return builder.toString().trim();
     }
 }

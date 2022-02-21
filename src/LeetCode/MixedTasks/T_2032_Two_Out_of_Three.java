@@ -1,6 +1,6 @@
 package LeetCode.MixedTasks;
 
-import random_practice.sorting_algorithms.MergeSortAlg;
+import LeetCode.leet_code_helpers.LeetCodeUtils;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -9,10 +9,10 @@ public class T_2032_Two_Out_of_Three {
 //    https://leetcode.com/problems/two-out-of-three/
     public static void main(String[] args) {
         T_2032_Two_Out_of_Three obj = new T_2032_Two_Out_of_Three();
-        MergeSortAlg arrayGenerator = new MergeSortAlg();
-        int[] ints_one = arrayGenerator.randomize_array(10, 10);
-        int[] ints_two = arrayGenerator.randomize_array(10, 10);
-        int[] ints_three = arrayGenerator.randomize_array(10, 10);
+        LeetCodeUtils arrayGenerator = new LeetCodeUtils();
+        int[] ints_one = arrayGenerator.generate_random_array(10, 10);
+        int[] ints_two = arrayGenerator.generate_random_array(10, 10);
+        int[] ints_three = arrayGenerator.generate_random_array(10, 10);
         System.out.println("3 original arrays: \n" +
                 "ints_one = " + Arrays.toString(ints_one) + "\n" +
                 "ints_two = " + Arrays.toString(ints_two) + "\n" +
@@ -62,7 +62,7 @@ public class T_2032_Two_Out_of_Three {
         for (int n : nums1)  bits[n] |= 0b110;
         for (int n : nums2)  bits[n] |= 0b101;
         for (int n : nums3)  bits[n] |= 0b011;
-        List<Integer> result = new ArrayList();
+        List<Integer> result = new ArrayList<>();
         for (int i = bits.length - 1; i > 0; i--) if (bits[i] == 0b111) result.add(i);
         return result;
     }
