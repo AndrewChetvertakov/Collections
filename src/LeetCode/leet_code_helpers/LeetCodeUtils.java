@@ -6,10 +6,11 @@ import java.util.Random;
 public class LeetCodeUtils {
     public static void main(String[] args) {
         LeetCodeUtils obj = new LeetCodeUtils();
-        String[] input = {"[[1,3],[2,2],[3,1]]"
+        String[] input = {  "[[1,3],[2,2],[3,1]]",
+                            "[[2,2],[3,3]]"
 
                                                  };
-        System.out.println(obj.replacer(input[0]));
+        System.out.println(obj.replacer(input[1]));
 
     }
 
