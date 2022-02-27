@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class GridTraveling {
-//    How many ways is there to traverse X by Y matrix?
+//    How many efficient ways are there to traverse X by Y matrix?
     public static void main(String[] args) {
         GridTraveling obj = new GridTraveling();
         /*
