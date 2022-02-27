@@ -27,12 +27,11 @@ public class GridTraveling {
         if( x == 1 || y == 1) return 1;
 
         String key_one = x + "-" + y;
-        if (!memo.containsKey(key_one)) {
-            String key_two = y + "-" + x;
+        String key_two = y + "-" + x;
+        if (!memo.containsKey(key_one) && !memo.containsKey(key_two)) {
             memo.put(key_one, grid_traveler(x - 1, y, memo) + grid_traveler(x, y-1, memo));
-            memo.put(key_two, memo.get(key_one));
         }
-        return memo.get(key_one);
+        return memo.get(key_one) == null ? memo.get(key_two) : memo.get(key_one);
     }
 
     public void test(long[][] examples, Map<String, Long> memo_map) {
