@@ -32,4 +32,17 @@ public class LeetCodeUtils {
         for(int[] arr: ints)
             System.out.println("Array number " + i++ + " = " + Arrays.toString(arr));
     }
+
+    public int[][] grid_generator(int rows, int columns) {
+        Random random = new Random();
+        int[][] arr = new int[rows][columns];
+        for (int r = 0; r < rows; r++) {
+            for (int c = 0; c < columns; c++) {
+                arr[r][c] = random.nextInt(101);
+            }
+        }
+        return arr;
+    }
+
+
 }
