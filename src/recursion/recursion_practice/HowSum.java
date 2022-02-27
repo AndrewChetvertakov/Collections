@@ -2,7 +2,7 @@ package recursion.recursion_practice;
 
 import LeetCode.leet_code_helpers.LeetCodeUtils;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class HowSum {
@@ -28,7 +28,7 @@ public class HowSum {
 
     //TODO add memo
     public List<Integer> howSum(int target, int[] nums) {
-        if(target == 0) return new ArrayList<>();
+        if(target == 0) return new LinkedList<>();
         if(target < 0) return null;
 
         for (int num : nums) {
