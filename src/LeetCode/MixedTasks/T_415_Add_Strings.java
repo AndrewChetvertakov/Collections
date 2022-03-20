@@ -123,4 +123,16 @@ public class T_415_Add_Strings {
         pointer2--;
         return recursiveAddString(num1, pointer1, num2, pointer2, builder, sum / 10 == 1);
     }
+
+    public String addStringsAgain(String num1, String num2) {
+        var result = new StringBuilder();
+        for (int i = num1.length() - 1, j = num2.length() - 1, carry = 0; i >= 0 || j >= 0 || carry != 0; i--, j--) {
+            var sum = carry;
+            if (i >= 0) sum += Character.digit(num1.charAt(i), 10);
+            if (j >= 0) sum += Character.digit(num2.charAt(j), 10);
+            carry = sum / 10;
+            result.append(sum % 10);
+        }
+        return result.reverse().toString();
+    }
 }
