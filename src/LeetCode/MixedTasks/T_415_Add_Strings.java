@@ -125,9 +125,9 @@ public class T_415_Add_Strings {
     }
 
     public String addStringsAgain(String num1, String num2) {
-        var result = new StringBuilder();
+        StringBuilder result = new StringBuilder();
         for (int i = num1.length() - 1, j = num2.length() - 1, carry = 0; i >= 0 || j >= 0 || carry != 0; i--, j--) {
-            var sum = carry;
+            int sum = carry;
             if (i >= 0) sum += Character.digit(num1.charAt(i), 10);
             if (j >= 0) sum += Character.digit(num2.charAt(j), 10);
             carry = sum / 10;
