@@ -6,16 +6,16 @@ import java.util.Random;
 public class LeetCodeUtils {
     public static void main(String[] args) {
         LeetCodeUtils obj = new LeetCodeUtils();
-        String[] input = {  "[[1,3],[2,2],[3,1]]",
-                            "[[2,2],[3,3]]"
+        String input = "[[\".\",\".\",\".\",\".\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\"p\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\"R\",\".\",\".\",\".\",\"p\"],[\".\",\".\",\".\",\".\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\".\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\"p\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\".\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\".\",\".\",\".\",\".\",\".\"]]\n" +
+                "Output: 3";
 
-                                                 };
-        System.out.println(obj.replacer(input[1]));
+
+        System.out.println(obj.replacer(input));
 
     }
 
     private String replacer(String input){
-        return input.replace("[", "{").replace("]", "}");
+        return input.replace("[", "{").replace("]", "}").replace("\"", "'");
     }
 
     public int[] generate_random_array(int arr_length, int upperBound) {
