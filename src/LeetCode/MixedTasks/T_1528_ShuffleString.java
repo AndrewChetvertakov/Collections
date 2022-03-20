@@ -1,6 +1,5 @@
 package LeetCode.MixedTasks;
 
-import java.util.Arrays;
 
 public class T_1528_ShuffleString {
     public static void main(String[] args) {
@@ -13,15 +12,13 @@ public class T_1528_ShuffleString {
     public static String restoreString(String s, int[] indices) {
         String[] result = new String[indices.length];
         for( int i = 0; i < indices.length; i++){
-            result[indices[i]] = s.charAt(i)+"";
-
+            result[indices[i]] = String.valueOf(s.charAt(i));
         }
 
-        StringBuilder pew = new StringBuilder();
+        StringBuilder builder = new StringBuilder();
         for (int i = 0; i < result.length; i++) {
-            pew.append(result[i]);
+            builder.append(result[i]);
         }
-//        String.join("",result);
-        return pew.toString();
+        return builder.toString();
     }
 }
