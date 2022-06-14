@@ -1,8 +1,5 @@
 package random_practice.random_garbage;
 
-
-import java.sql.SQLOutput;
-
 public class NextLetter {
     /*
     2.  Create a function NextLetter which takes a string parameter and modifies it using
