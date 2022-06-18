@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.medium_difficulty.matrix;
 
 import java.util.ArrayList;
 import java.util.Arrays;
