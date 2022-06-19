@@ -35,6 +35,7 @@ public class T_2225_Find_Players_With_Zero_or_One_Losses {
         result.add(lost_one);
         return result;
     }
+
     // To review. Same speed as var1, but this one got .merge - wtf? :D
     private List<List<Integer>> findWinners_var2(int[][] matches) {
         List<List<Integer>> result = new ArrayList<>();
