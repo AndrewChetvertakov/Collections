@@ -6,8 +6,7 @@ import java.util.Random;
 public class LeetCodeUtils {
     public static void main(String[] args) {
         LeetCodeUtils obj = new LeetCodeUtils();
-        String input = "[[\".\",\".\",\".\",\".\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\"p\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\"R\",\".\",\".\",\".\",\"p\"],[\".\",\".\",\".\",\".\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\".\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\"p\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\".\",\".\",\".\",\".\",\".\"],[\".\",\".\",\".\",\".\",\".\",\".\",\".\",\".\"]]\n" +
-                "Output: 3";
+        String input = "[[1,3],[2,3],[3,6],[5,6],[5,7],[4,5],[4,8],[4,9],[10,4],[10,9]]";
 
 
         System.out.println(obj.replacer(input));
@@ -18,7 +17,7 @@ public class LeetCodeUtils {
         return input.replace("[", "{").replace("]", "}").replace("\"", "'");
     }
 
-    public int[] generate_random_array(int arr_length, int upperBound) {
+    public static int[] generate_random_array(int arr_length, int upperBound) {
         int[] numbers = new int[arr_length];
         Random random = new Random();
         for (int i = 0; i < numbers.length; i++) {
