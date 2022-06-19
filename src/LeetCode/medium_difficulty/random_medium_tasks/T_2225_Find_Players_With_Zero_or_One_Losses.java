@@ -1,6 +1,7 @@
 package LeetCode.medium_difficulty.random_medium_tasks;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class T_2225_Find_Players_With_Zero_or_One_Losses {
 //    https://leetcode.com/problems/find-players-with-zero-or-one-losses/
@@ -13,7 +14,7 @@ public class T_2225_Find_Players_With_Zero_or_One_Losses {
 
     }
 
-    public List<List<Integer>> findWinners(int[][] matches) {
+    private List<List<Integer>> findWinners(int[][] matches) {
         Map<Integer, Integer> scores = new HashMap<>();
         for(int[] match : matches) {
             scores.put(match[1], scores.getOrDefault(match[1] , 0) + 1);
@@ -34,5 +35,33 @@ public class T_2225_Find_Players_With_Zero_or_One_Losses {
         result.add(lost_one);
         return result;
     }
+    // To review. Same speed as var1, but this one got .merge - wtf? :D
+    private List<List<Integer>> findWinners_var2(int[][] matches) {
+        List<List<Integer>> result = new ArrayList<>();
+        HashMap<Integer, Integer> winners = new HashMap<>(matches.length);
+        HashMap<Integer, Integer> oneLossers = new HashMap<>(matches.length);
 
+        for (int[] match : matches) {
+            for (int j = 0; j < 1; j++) {
+                winners.put(match[0], 1);
+                oneLossers.merge(match[1], 1, Integer::sum);
+            }
+        }
+        winners.keySet().removeAll(oneLossers.keySet());
+        result.add(
+                winners.keySet()
+                .stream()
+                .sorted()
+                .collect(Collectors.toList())
+        );
+        result.add(
+                oneLossers.entrySet()
+                .stream()
+                .filter(x -> x.getValue() == 1)
+                .map(Map.Entry::getKey)
+                .sorted()
+                .collect(Collectors.toList())
+        );
+        return result;
+    }
 }
