@@ -1,7 +1,6 @@
-package LeetCode.medium_String_tasks;
+package LeetCode.medium_difficulty.medium_String_tasks;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class T_763_Partition_Labels {

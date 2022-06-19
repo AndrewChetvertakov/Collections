@@ -1,4 +1,4 @@
-package LeetCode.medium_String_tasks;
+package LeetCode.medium_difficulty.medium_String_tasks;
 
 public class LongestPalindromicSubstringMine {
     public static void main(String[] args) {

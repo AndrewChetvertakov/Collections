@@ -1,4 +1,4 @@
-package LeetCode.MixedTasks.random_medium_tasks;
+package LeetCode.medium_difficulty.random_medium_tasks;
 
 import java.util.*;
 
